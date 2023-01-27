@@ -39,7 +39,7 @@ function syutudaiRandom(){
     
   }else if(yakuKakuritu <= 2437){  //チートイツ
   clog('チートイ');
-    let kouho = hai.concat();
+    let kouho = [].concat(hai);
     let sensyutu = [];
     for(let x = 0;x<7;x++){
       let randomx = randomNum(0,kouho.length - 1);
