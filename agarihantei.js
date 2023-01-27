@@ -541,6 +541,17 @@ function isYakuari(arr,moji1){
           return true;
         }
     
+    //いっつー
+if(
+    (isSansyoku_[0+1][0] == 1 && isSansyoku_[1+1][0] == 1 && isSansyoku_[2+1][0] == 1 && isSansyoku_[0+1][1] == isSansyoku_[1+1][1] && isSansyoku_[1+1][1] == isSansyoku_[2+1][1] && ([isSansyoku_[0+1][2],isSansyoku_[1+1][2],isSansyoku_[2+1][2]].sort(function(a, b) {return a - b})).toString() == [1,4,7].toString())||
+    (isSansyoku_[0+1][0] == 1 && isSansyoku_[1+1][0] == 1 && isSansyoku_[3+1][0] == 1 && isSansyoku_[0+1][1] == isSansyoku_[1+1][1] && isSansyoku_[1+1][1] == isSansyoku_[3+1][1] && ([isSansyoku_[0+1][2] ,isSansyoku_[1+1][2] ,isSansyoku_[3+1][2] ].sort(function(a, b) {return a - b})).toString() == [1,4,7].toString())||
+    (isSansyoku_[0+1][0] == 1 && isSansyoku_[3+1][0] == 1 && isSansyoku_[2+1][0] == 1 && isSansyoku_[0+1][1] == isSansyoku_[3+1][1] && isSansyoku_[3+1][1] == isSansyoku_[2+1][1] && ([isSansyoku_[0+1][2] ,isSansyoku_[3+1][2] ,isSansyoku_[2+1][2] ].sort(function(a, b) {return a - b})).toString() == [1,4,7].toString())||
+    (isSansyoku_[3+1][0] == 1 && isSansyoku_[1+1][0] == 1 && isSansyoku_[2+1][0] == 1 && isSansyoku_[3+1][1] == isSansyoku_[1+1][1] && isSansyoku_[1+1][1] == isSansyoku_[2+1][1] && ([isSansyoku_[3+1][2] ,isSansyoku_[1+1][2] ,isSansyoku_[2+1][2] ].sort(function(a, b) {return a - b})).toString() == [1,4,7].toString())
+  ){
+    yaku_ = 'ittu';
+    return true;
+}
+
     
       if(yaku_ != 0){
           //let agaripai = randomNum(1, 14);
