@@ -592,10 +592,10 @@ function isYakuari(arr,moji1){
           ispinhujantou_ = 0
         }
         if(isjuntu_.toString() == [1,1,1,1].toString() && ispinhujantou_ == 1){
-          if(agaripai_ == brock1_[0] || agaripai == brock1_[2] ||
-             agaripai_ == brock2_[0] || agaripai == brock2_[2] ||
-             agaripai_ == brock3_[0] || agaripai == brock3_[2] ||
-             agaripai_ == brock4_[0] || agaripai == brock4_[2]
+          if(agaripai_ == brock1_[0] || agaripai_ == brock1_[2] ||
+             agaripai_ == brock2_[0] || agaripai_ == brock2_[2] ||
+             agaripai_ == brock3_[0] || agaripai_ == brock3_[2] ||
+             agaripai_ == brock4_[0] || agaripai_ == brock4_[2]
              ){
                yaku_ = 'pinhu';
                return true;
