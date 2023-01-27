@@ -187,7 +187,18 @@ function syutudaiRandom(){
         ){
           yaku = 'sansyoku';
         }
-    
+      
+    //いっつー
+if(
+    (isSansyoku[0][0] == 1 && isSansyoku[1][0] == 1 && isSansyoku[2][0] == 1 && isSansyoku[0][1] == isSansyoku[1][1] && isSansyoku[1][1] == isSansyoku[2][1] && ([isSansyoku[0][2] + 1,isSansyoku[1][2] + 1,isSansyoku[2][2] + 1].sort(function(a, b) {return a - b})).toString() == [1,4,7].toString())||
+    (isSansyoku[0][0] == 1 && isSansyoku[1][0] == 1 && isSansyoku[3][0] == 1 && isSansyoku[0][1] == isSansyoku[1][1] && isSansyoku[1][1] == isSansyoku[3][1] && ([isSansyoku[0][2] + 1,isSansyoku[1][2] + 1,isSansyoku[3][2] + 1].sort(function(a, b) {return a - b})).toString() == [1,4,7].toString())||
+    (isSansyoku[0][0] == 1 && isSansyoku[3][0] == 1 && isSansyoku[2][0] == 1 && isSansyoku[0][1] == isSansyoku[3][1] && isSansyoku[3][1] == isSansyoku[2][1] && ([isSansyoku[0][2] + 1,isSansyoku[3][2] + 1,isSansyoku[2][2] + 1].sort(function(a, b) {return a - b})).toString() == [1,4,7].toString())||
+    (isSansyoku[3][0] == 1 && isSansyoku[1][0] == 1 && isSansyoku[2][0] == 1 && isSansyoku[3][1] == isSansyoku[1][1] && isSansyoku[1][1] == isSansyoku[2][1] && ([isSansyoku[3][2] + 1,isSansyoku[1][2] + 1,isSansyoku[2][2] + 1].sort(function(a, b) {return a - b})).toString() == [1,4,7].toString())
+  ){
+    yaku = 'ittu';
+  
+}
+
     
       if(yaku != 0){
           let agaripai = randomNum(1, 14);
