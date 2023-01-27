@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=yes">
+
+  <title>無限麻雀ハンドル</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 id="title">無限麻雀ハンドル</h1>
+  <div>
+    <input type="text" id="syutudaiInput" placeholder="出題IDを指定">
+    <button id="syutudaiButton" onclick="idNyuuryoku()">出題</button>
+    <button  id="syutudaiRandomButton" onclick="syutudaiRandom()" style="margin-left: 1em;">ランダムに出題</button>
+  </div>
+  <div style="margin: 10px;">
+    場風: <span id="bahuu"></span>場/
+    自風: <span id="jihuu"></span>家/
+    <span id="rontumo"></span>/
+    出題ID: <span id="syutudaiId"></span> 
+  </div>
+  <div id="kaitou" class="retu">
+    
+  </div>
+  <div id="hyouji" class="retu">
+    
+  </div>
+  <hr>
+  <div id="nyuuryoku" class="retu">
+    <div>
+
+    </div>
+  </div>
+  <div>
+    <p></p>
+    回答欄の牌姿で出題IDを作成:　
+    <select id="createbahuu">
+      <option value="東">東</option>
+      <option value="南">南</option>
+      <option value="西">西</option>
+      <option value="北">北</option>
+    </select>場　
+    <select id="createjihuu">
+      <option value="東">東</option>
+      <option value="南">南</option>
+      <option value="西">西</option>
+      <option value="北">北</option>
+    </select>家　
+    <select id="createrontumo">
+      <option value="ロン">ロン</option>
+      <option value="ツモ">ツモ</option>
+    </select>
+    <button id="createbutton" onclick="createId()">決定</button>
+    <div id="createiddiv">
+      
+    </div>
+  </div>
+  <!-- Project -->
+  <script src="const.js"></script>
+  <script src="agarihantei.js"></script>
+  <script src="syutudai.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
