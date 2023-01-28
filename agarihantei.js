@@ -66,7 +66,7 @@ function isKokusi(arr){
     }
     
   }
-  if(kouho.indexOf(sousa[0]) != -1 && kouho.length == 1){
+  if(kouho.indexOf(sousa[0]) != -1 && sousa.length == 1){
     return true;
   }else{
     return false;
