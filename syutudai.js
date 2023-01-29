@@ -361,6 +361,10 @@ function idNyuuryoku(){
   paisinum[0] = idnum[0];
   for (let x = 1; x < 15; x++) {
     paisinum[x] = u32(idnum[x] - idnum[x - 1] - 13);
+    if(hai[paisinum[x]] == undefines){
+      alert('idが間違っています。');
+      return;
+    }
     kotaex[x - 1] = hai[paisinum[x]];
   }
   
