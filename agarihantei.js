@@ -485,10 +485,10 @@ function isYakuari(arr,moji1){
                     
       let yaku_ = 0;
       //役はい
-      if(brock1_[0] ==bahuu0[0] || brock1_[0] ==jihuu0[0] || brock1_[0] >=70 ||
-         brock2_[0] ==bahuu0[0] || brock2_[0] ==jihuu0[0] || brock2_[0] >=70 ||
-         brock3_[0] ==bahuu0[0] || brock3_[0] ==jihuu0[0] || brock3_[0] >=70 ||
-         brock4_[0] ==bahuu0[0] || brock4_[0] ==jihuu0[0] || brock4_[0] >=70
+      if(brock1_[0] ==bahuu0[0] || brock1_[0] ==jihuu0[0] || brock1_[0] >=80 ||
+         brock2_[0] ==bahuu0[0] || brock2_[0] ==jihuu0[0] || brock2_[0] >=80 ||
+         brock3_[0] ==bahuu0[0] || brock3_[0] ==jihuu0[0] || brock3_[0] >=80 ||
+         brock4_[0] ==bahuu0[0] || brock4_[0] ==jihuu0[0] || brock4_[0] >=80
          ){
            yaku_ = 'yakuhai';
            return true;
@@ -599,7 +599,7 @@ if(
         
         //ピンフ
         let ispinhujantou_ = 1;
-        if(jantou_[0] == jihuu0[0] || jantou_[0] == bahuu0[0] || jantou_[0] >= 70){
+        if(jantou_[0] == jihuu0[0] || jantou_[0] == bahuu0[0] || jantou_[0] >= 80){
           ispinhujantou_ = 0
         }
         if(isjuntu_.toString() == [1,1,1,1].toString() && ispinhujantou_ == 1){
